@@ -2,7 +2,6 @@ body{
     background-color:rgb(54, 48, 48);
 }
 
-
 #box {
     margin: 0;
     padding: 0;
@@ -11,6 +10,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    animation-name: bounce;
   }
   #subject{
     padding: 60px;
@@ -37,5 +37,13 @@ body{
     font-family: aria;
     
   }
-
+  #subject a::before{
+    background-color: #eb10ff;
+  }
+  #subject a::after{
+    background-color: #4f1b53;
+  }
+  #subject a:hover{
+    text-shadow: 0 0 10px #5c2761;
+  }
   
