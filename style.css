@@ -1,0 +1,41 @@
+body{
+    background-color:rgb(54, 48, 48);
+}
+
+
+#box {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #subject{
+    padding: 60px;
+    border-radius: 30%;
+    border: 5px solid rgb(54, 48, 48);
+    background-color: rgb(54, 48, 48);
+    transition-duration: 0.5s;
+  }
+  #subject:hover::before{
+    background-color: rgb(53, 62, 182);
+    box-shadow: 5px 5px 5px green;
+  }
+  #subject:hover::after{
+    background-color: rgb(37, 124, 201);
+    box-shadow: 5px;
+  }
+  #subject:hover{
+    background-color: rgb(197, 108, 182);
+    border-color: rgb(156, 73, 156);
+    box-shadow: 0 0 15px #eb10ff ;
+  }
+  #subject a{
+    font-size: 70px;
+    font-family: aria;
+    
+  }
+
+  
