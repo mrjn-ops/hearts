@@ -1,49 +1,89 @@
-body{
-    background-color:rgb(54, 48, 48);
+body {
+  background-color: rgb(184, 138, 138);
+  transition: background-color 1s ease, background-image 1s ease;
+}
+
+#subject {
+  transition: background-color 1s ease, border-color 1s ease, box-shadow 1s ease;
+}
+
+#btntext, #text2 {
+  transition: -webkit-text-fill-color 1s ease;
 }
 
 #box {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation-name: bounce;
-  }
-  #subject{
-    padding: 60px;
-    border-radius: 30%;
-    border: 5px solid rgb(54, 48, 48);
-    background-color: rgb(54, 48, 48);
-    transition-duration: 0.5s;
-  }
-  #subject:hover::before{
-    background-color: rgb(53, 62, 182);
-    box-shadow: 5px 5px 5px green;
-  }
-  #subject:hover::after{
-    background-color: rgb(37, 124, 201);
-    box-shadow: 5px;
-  }
-  #subject:hover{
-    background-color: rgb(197, 108, 182);
-    border-color: rgb(156, 73, 156);
-    box-shadow: 0 0 15px #eb10ff ;
-  }
-  #subject a{
-    font-size: 70px;
-    font-family: aria;
-    
-  }
-  #subject a::before{
-    background-color: #eb10ff;
-  }
-  #subject a::after{
-    background-color: #4f1b53;
-  }
-  #subject a:hover{
-    text-shadow: 0 0 10px #5c2761;
-  }
-  
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: bounce;
+}
+
+#button-container {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+#subject {
+  position: relative;
+  z-index: 1;
+  padding: 60px;
+  border-radius: 30%;
+  border: 5px solid rgb(54, 48, 48);
+  background-color: rgb(54, 48, 48);
+  transition-duration: 0.5s;
+}
+
+#btntext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  white-space: nowrap; /* Ensure the text doesn't wrap */
+  padding: 0 10px; /* Optional: Adjust padding for better visibility */
+}
+
+#text2 {
+  display: block;
+  margin-top: 20px; /* Adjust this as needed */
+  text-align: center;
+  font-size: 1.2em; /* Adjust font size as needed */
+}
+
+#subject:hover::before {
+  background-color: rgb(53, 62, 182);
+  box-shadow: 5px 5px 5px green;
+}
+
+#subject:hover::after {
+  background-color: rgb(37, 124, 201);
+  box-shadow: 5px;
+}
+
+#subject:hover {
+  background-color: rgb(197, 108, 182);
+  border-color: rgb(156, 73, 156);
+  box-shadow: 0 0 15px #eb10ff;
+}
+
+#subject a {
+  font-size: 70px;
+  font-family: aria;
+}
+
+#subject a::before {
+  background-color: #eb10ff;
+}
+
+#subject a::after {
+  background-color: #4f1b53;
+}
+
+#subject a:hover {
+  text-shadow: 0 0 10px #5c2761;
+}
